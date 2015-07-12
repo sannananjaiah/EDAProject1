@@ -24,7 +24,7 @@ DT$Datetime = paste(as.character(DT[,1]) , DT[,2])
 # Then Convert the required variables to their respective data types. Date, Global Active Power, Datetime 
 
 DT$Date = as.Date(as.character(DT[,1]))
-DT$Time = as.numeric(as.character(DT[,3]))
+DT$Global_active_power = as.numeric(as.character(DT[,3]))
 DT$Datetime = strptime(DT$Datetime, '%d/%m/%Y %H:%M')
 
 #Plot 2
